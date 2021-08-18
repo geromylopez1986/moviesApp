@@ -1,0 +1,184 @@
+nav {
+    width: 100%;
+}
+
+#color-font {
+  color: #ffffff;
+}
+#color-font:hover {
+  color: #ccc;
+}
+
+#color-bg {
+  background: #000;
+}
+
+#color-font:hover {
+  background: none;
+}
+
+#series {
+
+}
+
+nav ul {
+    position: relative;
+    list-style: none;
+    display: table;
+}
+
+nav li ul {
+display: none;
+transition: 0.5s;
+}
+
+nav li:hover ul {
+    display: block;
+    height: 300px;
+}
+
+nav ul ul {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    z-index: 100;
+}
+
+nav li li {
+    text-align: center;
+    width: 200px;
+    padding: 5px;
+    left: 40px;
+    position: relative;
+    border: 1px solid white;
+
+    background: #000428; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #004e92,
+      #000428
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #004e92,
+      #000428
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+nav .active {
+    border: 1px solid white;
+    background-color: rgba(221, 24, 24, .9);
+    border-style: none;
+}
+
+nav ul li li a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li ul .list-submenu {
+    text-align: center;
+    margin: 5px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 21px;
+
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+nav ul li {
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px;
+    float: left;
+}
+
+nav ul li a  {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+    transition: 0.5s;
+}
+
+nav #dropbox-series {
+  width: 422px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+nav #dropbox-series a {
+  text-decoration: none;
+  border: 1px solid white;
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
+  float: left;
+
+  background-color: rgba(221, 24, 24, .5);
+
+}
+
+.detail__sectiom > button {
+  background: none;
+  margin: 10px;
+  padding: 5px 15px;
+  border: none;
+
+  color: white;
+
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+form  #btn:hover {
+  color: #ffffff;
+
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.series-titulo {
+  text-align: center;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 21px;
+  margin: 0;
+  padding: 0;
+
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.dropdown-menu {
+  margin-top: 60px;
+}

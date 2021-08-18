@@ -1,0 +1,45 @@
+.carousel-item {
+    position: relative!important;
+}
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .5);
+
+}
+
+.carousel-caption {
+    text-align: justify;
+}
+
+.carousel-caption a {
+    float: left;
+}
+
+.carousel-caption a button {
+    background-color: #dd1818;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    transition: .4s ease-in-out;
+}
+
+.carousel-caption a button:hover {
+    background-color: rgba(221, 24, 24, .7);
+}
+
+.carousel-control-prev {
+    z-index: 2!important;
+}
+
+.carousel-control-next {
+    z-index: 2!important;
+}
+
+.carousel-item img {
+    height: 500px!important;
+}

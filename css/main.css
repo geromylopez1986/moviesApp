@@ -1,0 +1,2306 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.activo {
+  background-color: #2548fc !important;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --FondoRGBA: rgba(0, 0, 0, 0.4);
+}
+
+/* PARAMETROS BASICOS DE CSS */
+body {
+  background-image: url(../img/inicio/cine.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000000 !important;
+}
+
+.capa_pelicula {
+  position: relative;
+  z-index: 1;
+}
+
+body.capa_pelicula::before {
+  content: "";
+  position: fixed;
+  z-index: 2;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.contenedor-popular {
+  position: relative;
+  z-index: 100;
+}
+
+.contenedor-informacion {
+  position: relative;
+  z-index: 100;
+}
+
+#top {
+  transition: 0.4s ease;
+}
+
+#scrollUp {
+  background-image: url(../doc/arrow-alt-circle-up-regular.svg);
+  width: 50px;
+  height: 50px;
+  background-color: #dd1818;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+}
+
+p,
+span {
+  font-family: "Inconsolata", monospace;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* PARAMETROS REUTILIZABLES */
+div.contenedor {
+  width: 95%;
+  margin: 0 auto;
+}
+
+div.contenedor_titulos {
+  max-width: 1200px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+div.contenedorMD {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+div.contenedor-site {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.fixel {
+  clear: both;
+}
+
+.separar-top {
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  div.barra {
+    position: fixed;
+    z-index: 1000;
+    background-color: #333333;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1e1e;
+  }
+}
+
+div.contenedor-site {
+  background-color: #000000;
+  margin: 20px auto;
+}
+
+/* PARAMETROS DE EL HEADER */
+
+@media only screen and (min-width: 768px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+div.logotipo {
+  display: block;
+  background-color: #dd1818;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  div.logotipo {
+    display: inline-block;
+    background-color: #dd1818;
+    transition: 0.4s ease-in-out;
+  }
+}
+
+div.logotipo:hover {
+  background-color: rgba(221, 24, 24, 0.9);
+}
+
+.navegacion-principal {
+  color: #ffffff;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .navegacion-principal {
+    display: inline-block;
+  }
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Fira Sans", 700;
+  padding: 10px 20px;
+  transition: 0.4s ease-in-out;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  background-color: #dd1818;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+div.box-buscar {
+  position: relative;
+}
+
+div.buscador {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.buscador input {
+  padding: 10px 10px;
+  flex: 1;
+  border: none;
+  background-color: #29323c;
+  color: #ffffff;
+}
+
+div.buscador button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  div.buscador {
+    display: inline-block;
+    margin-right: 1.6rem;
+  }
+
+  div.buscador input {
+    display: inline-block;
+    padding: 10px 10px;
+    border: none;
+    background-color: #29323c;
+    color: #ffffff;
+  }
+
+  div.buscador button {
+    padding: 10px 10px;
+    background-color: #29323c;
+    border: none;
+  }
+}
+
+div.buscador button i {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* PARAMETROS DE EL SLIDEBAR */
+div.contenedor-informacion {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-cover {
+  float: left;
+  width: 33.3%;
+  margin-left: 15px;
+}
+.contenedor-descripcion {
+  float: left;
+  width: 27.3%;
+}
+.contenedor-trailer {
+  float: left;
+  text-align: center;
+  margin-right: 15px;
+  width: 39.3%;
+}
+.contenedor-trailer h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Fira Sans", sans-serif;
+}
+.contenedor-trailer iframe {
+  border: 1px solid #dd1818;
+  width: 650px;
+  height: 400px;
+}
+
+div.contenedor-titulo h2:before {
+  content: "|";
+  margin-right: 10px;
+  color: #dd1818;
+}
+
+div.contenedor-titulo h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+div.contenedor-next a {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 10px;
+  transition: 0.4s ease-in-out;
+}
+
+div.contenedor-next a:hover {
+  background-color: #dd1818;
+  color: white;
+}
+
+div.contenedor-next a span i {
+  font-size: 20px;
+}
+
+div.card-pelis {
+  margin-bottom: 2rem;
+  width: 48%;
+}
+
+@media only screen and (min-width: 768px) {
+  div.card-pelis {
+    text-align: center;
+    overflow: hidden;
+    margin: 0 20px;
+    position: relative;
+    z-index: 100;
+    width: auto;
+    margin-bottom: 2rem;
+  }
+
+  /*   div.solo-mobiles {
+  display: none;
+} */
+}
+
+.tutorialLogo {
+  width: 275px;
+  height: 78.1px;
+}
+
+div.card-pelis .cover-pelicula a {
+  margin: 0;
+}
+
+div.card-pelis a:hover {
+  color: #cccccc;
+}
+
+div.card-pelis .cover-pelicula img {
+  width: 100%;
+  height: 300px;
+}
+
+div.card-pelis a {
+  color: #ffffff;
+  margin-right: 10px;
+  text-decoration: none;
+  font-family: "Inconsolata", monospace;
+}
+
+div.card-pelis span i {
+  color: #dd1818;
+  font-size: 30px;
+}
+
+div.card-pelis p {
+  color: #cccccc;
+  margin: 0;
+}
+
+.btn-play {
+  position: absolute;
+  transition: all 1s ease;
+  display: none;
+  left: 40%;
+  bottom: 40%;
+}
+
+.btn-play i {
+  color: white;
+  font-size: 48px;
+  display: inline-block;
+}
+
+.cover-pelicula {
+  position: relative;
+}
+
+div.sombra-cover {
+  background-color: var(--FondoRGBA);
+  width: 200px;
+  top: 0;
+  left: 0;
+  height: 300px;
+  display: none;
+  position: absolute;
+  transition: 1s ease;
+}
+
+div.cover-pelicula:hover a {
+  display: block;
+  cursor: pointer;
+}
+
+div.cover-pelicula:hover .sombra-cover {
+  display: block;
+}
+
+/* PARAMETROS DE ULTIMOS AGREGADOS */
+section.ultimas-agregadas {
+  margin-top: 2rem;
+}
+
+div.contenedor-titulo {
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+div.paginacion-ultimas {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  border-top: 1px solid white;
+  padding-top: 1em;
+}
+
+div.paginacion-ultimas nav {
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+}
+
+div.paginacion-ultimas nav a {
+  color: white;
+}
+
+.ocultar {
+  display: none;
+}
+
+div.paginacion-ultimas nav ul a li {
+  display: block;
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  div.contenedor-titulo {
+    display: flex;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+div.mostrar-todas p,
+a {
+  display: inline;
+}
+
+div.mostrar-todas p {
+  color: #cccccc;
+  margin-right: 10px;
+}
+
+div.mostrar-todas a {
+  color: #ffffff;
+  background-color: #dd1818;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-family: "Inconsolata", monospace;
+}
+
+div.mostrar-todas a:hover {
+  background-color: rgba(221, 24, 24, 0.8);
+}
+
+div.box-ultimas-agregadas {
+  width: 100%;
+  max-width: 100%;
+}
+
+div.ultimas-box {
+  border: 1px solid #dd1818;
+  padding: 1rem;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* PARAMETROS DE EL CONTENEDOR SERIES */
+div.series-fles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+div.box-series {
+  display: flex;
+}
+
+div.series-box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  div.series-box {
+    flex-wrap: nowrap;
+  }
+}
+
+/* PARAMETROS DE EL FOOTER */
+div.box-footer {
+  color: #ffffff;
+  margin-top: 5rem;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+
+div.top-btn a {
+  color: #ffffff;
+}
+
+#top {
+  transition: all 1s ease;
+}
+
+div.top-btn a:hover {
+  color: #cccccc;
+}
+
+div.top-btn a span i {
+  font-size: 2rem;
+}
+
+nav.navegacion-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  z-index: 100;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.navegacion-footer {
+    width: 95%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+nav.navegacion-footer a {
+  color: #ffffff;
+  align-items: center;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #dd1818;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1.6rem;
+  transition: all 0.6s ease;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.navegacion-footer a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    transition: all 0.6s ease;
+  }
+}
+
+nav.navegacion-footer a:hover {
+  background-color: var(--FondoRGBA);
+  color: #cccccc;
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+
+/* PARAMETROS DE EL MENU DESPLEGABLE */
+.menu-hamburgesa {
+  display: block;
+  background-color: #000000;
+  text-align: center;
+  margin: 0 0 2rem 0;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-hamburgesa {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .menu-close {
+    top: 4rem;
+    left: 6rem;
+    position: absolute;
+    display: inline-block;
+    background-color: #dd1818;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .menu-open {
+    top: 2rem;
+    left: 6rem;
+    position: absolute;
+    display: inline-block;
+    background-color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+  }
+}
+
+.menu-open {
+  display: none;
+}
+
+.menu-close:hover {
+  background-color: rgba(221, 24, 24, 0.8);
+}
+
+div.menu-hamburgesa a {
+  color: #ffffff;
+  margin: 0 2rem;
+}
+
+div.menu-hamburgesa a span i {
+  font-size: 2rem;
+}
+
+/* PARAMETROS DE LOS SOCIAL NEDIAS */
+div.media-social {
+  text-align: center;
+}
+
+div.media-social .twitter {
+  background-color: #1a91da;
+}
+
+div.media-social .twitter i:hover {
+  color: #cccccc;
+}
+div.media-social .facebook {
+  background-color: #4267b2;
+}
+div.media-social .facebook i:hover {
+  color: #cccccc;
+}
+div.media-social .instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+div.media-social .instagram i:hover {
+  color: #cccccc;
+}
+div.media-social .google-plus {
+  background-color: #db4a39;
+}
+div.media-social .google-plus i:hover {
+  color: #cccccc;
+}
+div.media-social .whatsapp {
+  background-color: #25d366;
+}
+div.media-social .whatsapp i:hover {
+  color: #cccccc;
+}
+div.media-social .youtube {
+  background-color: #c4302b;
+}
+div.media-social .youtube i:hover {
+  color: #cccccc;
+}
+
+@media only screen and (min-width: 768px) {
+  div.media-social {
+    margin-right: 2rem;
+    display: inline-block;
+  }
+}
+
+div.media-social a {
+  color: #ffffff;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+div.media-social a span i {
+  font-size: 24px;
+  text-align: center;
+}
+
+div.media-social a span i:hover {
+  color: #cccccc;
+}
+
+.relatemovie img {
+  width: 185px !important;
+}
+
+.relatemovie span {
+  width: 185px !important;
+}
+
+/* ==========================================================================
+   ESTILOS DE VER PELICULA
+   ========================================================================== */
+.background-body {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.8s ease;
+  width: 100%;
+}
+
+.box-img {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 513px;
+  z-index: 10;
+}
+
+.box-img img {
+  background-size: cover;
+  background-position: center;
+  width: 1200px;
+  height: 513px;
+}
+
+.background-body-ver {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.disabled {
+  opacity: 0.4;
+}
+
+.color-yellow {
+  color: yellow;
+}
+
+.btn-primary-md {
+  margin: 1.4rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #0e36f0;
+  color: #ffffff;
+}
+
+.btn-primary-lg {
+  margin: 1rem;
+  display: inline-block;
+  padding: 1.4rem 5rem;
+  border: none;
+  background-color: #0e36f0;
+  color: #ffffff;
+}
+
+.btn-primary-md-no-effect {
+  margin: 1.4rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #0e36f0;
+  color: #ffffff;
+}
+
+.btn-primary-lg-no-effect {
+  margin: 1rem;
+  font-size: 24px;
+  display: inline-block;
+  padding: 1.2rem 4rem;
+  border: none;
+  background-color: #dd1818;
+  color: #ffffff;
+}
+
+.darken-4 {
+  transition: 0.8s ease-in-out;
+}
+
+.darken-4:hover {
+  background-color: #0e36f0;
+}
+
+.btn-primary-lg:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+}
+
+.btn-primary-md:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+}
+
+.btn-primary-lg-animate:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+}
+
+.btn-primary-md-animate:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+}
+
+.btn-second-md {
+  margin: 1.4rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #0e36f0;
+  color: #ffffff;
+}
+
+.btn-second-lg {
+  margin: 1rem;
+  display: inline-block;
+  padding: 1.4rem 5rem;
+  border: none;
+  background-color: rgb(255, 115, 81);
+  color: #ffffff;
+}
+
+.btn-second-lg:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+}
+
+.btn-second-md:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+}
+
+.btn-second-lg-animate:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+}
+
+.btn-second-md-animate:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+}
+
+/* PARAMETROS DE LOS HOVER DE TODAS LAS CLASES */
+.contenedor-popular .contenedor-pelicula:hover {
+  border: 5px double #333333;
+}
+
+.contenedor-popular .contenedor-pelicula:hover > h3 {
+  color: #ebc654;
+  background-color: #0e36f0;
+}
+
+header nav ul li:hover {
+  background-color: #0e36f0;
+}
+
+header nav ul li:hover > a {
+  color: white;
+}
+
+header nav ul li:hover .children {
+  display: block;
+}
+
+/* PARAMETROS DE EL CONTENEDOR PRINCIPAL */
+div.contenedor-principal {
+  width: 95%;
+  max-width: 768px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  div.contenedor-principal {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+div.contenedor-Ver-accion {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+
+/* PARAMETROS DE EL HEADER */
+header.contenedor-cabeza .logo-box {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  header.contenedor-cabeza .logo-box {
+    margin-top: 10px;
+  }
+}
+
+header.contenedor-cabeza .logo-box a img {
+  padding: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  header.contenedor-cabeza .logo-box a img {
+    width: 400px;
+  }
+}
+
+/* PARAMETROS DE EL NAVEGADOR */
+.menu_bar {
+  display: none;
+}
+
+header nav {
+  /*     background: rgba(126, 126, 126, .5); */
+  max-width: 1000px;
+  width: 95%;
+  z-index: 1000;
+  margin: 20px auto;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+header nav ul li .children {
+  display: none;
+  background-color: #333;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+}
+
+header nav ul li .children li {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header nav ul li a {
+  color: #ffffff;
+  display: block;
+  padding: 1.2rem;
+  text-decoration: none;
+}
+
+header nav ul li span {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    position: relative;
+    top: 80px;
+  }
+
+  header.contenedor-cabeza .logo-box img {
+    width: 400px;
+  }
+
+  .contenedor-buscador {
+    display: none;
+  }
+
+  .menu_bar {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #333333;
+  }
+
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 20px;
+    color: #ffffff;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .menu_bar .bt-menu span {
+    float: right;
+    font-size: 40px;
+  }
+
+  header nav {
+    width: 80%;
+    height: calc(100% - 80px);
+    position: fixed;
+    background-color: #0e36f0;
+    right: 100%;
+    margin: 0;
+    overflow: scroll;
+  }
+
+  header nav ul li {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  header nav ul li a {
+    display: block;
+  }
+
+  header nav ul li:hover .children {
+    display: none;
+  }
+
+  header nav ul li .children {
+    width: 100%;
+    position: relative;
+  }
+
+  header nav ul li .children li a {
+    margin-left: 20px;
+  }
+}
+
+/* PARAMETROS DE EL BUSCADOR */
+form input[type="search"] {
+  transition: 0.4s ease-in-out;
+}
+
+form input[type="search"]:focus {
+  box-shadow: 0 0 15px 0 #dd1818;
+}
+
+input[type="email"] {
+  background-color: transparent;
+}
+
+.contenedor-buscador {
+  padding: 40px 5px 5px 5px;
+  float: right;
+}
+
+.contenedor-buscador input {
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+}
+
+/* PARAMETROS DE EL CONTENEDOR PELICULAS */
+section.contenedor-popular {
+  width: 100%;
+  display: inline-block;
+}
+
+section .contenedor-tituloH {
+  background: #dd1818;
+  padding: 2px;
+  margin-top: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+section .contenedor-tituloH h1 {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.contenedor-pelicula {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor-pelicula {
+    width: 230px;
+    margin: 5px;
+    float: left;
+    height: auto;
+  }
+}
+
+.contenedor-popular .contenedor-pelicula {
+  border: 5px double #ffffff;
+}
+
+.contenedor-pelicula h3 {
+  width: 100%;
+  padding: 3px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.contenedor-img img {
+  position: relative;
+  width: 100%;
+  height: 345px;
+}
+
+/* PARAMETROS DE EL CONTENEDOR LISTA-PAGINACION */
+@media (min-width: 768px) {
+  section.next-page {
+    max-width: 1000px;
+    width: 95%;
+    margin: auto;
+  }
+}
+
+section.next-page .paginacionList {
+  width: 100%;
+  padding: 20px;
+}
+
+section.next-page .paginacionList ul {
+  list-style: none;
+  text-align: center;
+}
+
+section.next-page .paginacionList ul li {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  border: 2px solid #ffffff;
+}
+
+section.next-page .paginacionList ul a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+section.next-page .paginacionList ul a:hover > li {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  background-color: #2548fc;
+  color: #ffffff;
+}
+
+section.next-page .paginacionList ul a .activo {
+  background-color: #2548fc;
+  color: #ffffff;
+}
+
+section.next-page .paginacionList ul a .activo:hover {
+  transform: scale(1);
+  cursor: default;
+}
+
+section.next-page .paginacionList ul a .disabled:hover {
+  transform: scale(1);
+  cursor: default;
+  background-color: #333;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  section.next-page .paginacionList ul li {
+    border: 2px solid rgb(248, 248, 250);
+  }
+
+  section.next-page .paginacionList ul a:hover > li {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    background-color: rgb(247, 245, 242);
+    color: #000000;
+  }
+
+  section.next-page .paginacionList ul a .activo {
+    background-color: rgb(247, 245, 242);
+    color: #000000;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* PARAMETROS DE CONTENEDOR INFORMACION PELICULA */
+@media screen and (max-width: 800px) {
+  .contenedor-informacion {
+    text-align: center;
+  }
+
+  .contenedor-informacion .contenedor-cover {
+    max-width: 500px;
+  }
+}
+
+.contenedor-informacion {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.contenedor-cover {
+  max-width: 300px;
+  height: 400px;
+  width: 100%;
+  float: left;
+}
+
+.contenedor-cover img {
+  width: 350px;
+  height: 450px;
+}
+
+.contenedor-descripcion {
+  color: #ffffff;
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+.contenedor-descripcion h2 {
+  font-size: 1.4rem;
+}
+
+.contenedor-descripcion span {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.contenedor-descripcion span a {
+  color: #f8f8f8;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.contenedor-descripcion .imdb {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+.contenedor-compartir {
+  padding: 1rem;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #333333;
+  color: #db4a39;
+  border-radius: 20px;
+}
+
+.box-sinopsis {
+  position: relative;
+  margin-right: 1rem;
+}
+.box-sinopsis::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -15px;
+  box-shadow: 0 0 15px 0 #bc1888;
+  display: block;
+  width: 3px;
+  height: 100%;
+  background-color: #dd1818;
+}
+.box-reparto {
+  margin-left: 1rem;
+}
+
+.contenedor-compartir h2 {
+  color: #dd1818;
+  display: inline-block;
+}
+
+/* PARAMETROS DE CONTENEDOR DE VER PELICULA */
+
+@media screen and (max-width: 800px) {
+  section.contenedor-peliculaVer .box-link {
+    text-align: center;
+  }
+}
+
+section.contenedor-peliculaVer {
+  width: 100%;
+  height: auto;
+}
+
+section.contenedor-peliculaVer .box-link {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section.contenedor-peliculaVer .box-link a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.box-trailer {
+  min-width: 760px;
+  width: 10%;
+  margin: 0 auto;
+  text-align: center;
+  background: #dd1818;
+  height: auto;
+  display: block;
+}
+
+.box-trailer .trailer {
+  float: left;
+  max-width: 760px;
+  max-height: 415px;
+  width: 100%;
+  height: auto;
+}
+
+.box-trailer .trailer iframe {
+  width: 760px;
+  height: 415px;
+}
+
+@media screen and (max-width: 800px) {
+  .box-trailer {
+    max-width: 480px;
+    display: inline;
+  }
+
+  .box-trailer .trailer {
+    background-color: #dd1818;
+    max-width: 480px;
+    height: auto;
+    float: left;
+  }
+
+  .box-trailer .trailer iframe {
+    width: 100%;
+    max-width: 500px;
+    color: #ffffff;
+  }
+}
+
+.box-verpelicula {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0 0 30px 0 #dd1818;
+}
+
+.box-veronline {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.serv {
+  background: #333;
+}
+
+.navegador_servidor_online ul li {
+  display: block;
+}
+
+.navegador_servidor_online li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navegador_servidor_online ul li a:hover {
+  color: #ffffff;
+}
+
+.box-veronline {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+
+.video_pelis {
+  position: relative;
+  width: 1200px;
+  height: 500px;
+}
+
+.box-veronline h2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333333;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.box-veronline iframe {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: 0.4s ease-in-out;
+}
+
+div.cap_titulos {
+  padding-bottom: 0.2em;
+  background-color: #dd1818;
+  color: #ffffff;
+}
+
+/* PARAMETROS DE LA  DESCARGA */
+.box-opciones {
+  color: #ffffff;
+}
+
+.box-opciones h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+table {
+  background-color: #ffffff;
+}
+
+.user-view a {
+  background-color: red;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  section.contenedor-descargas {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+}
+
+section.contenedor-descargas .box-opciones {
+  width: 88%;
+  margin: auto;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  section.contenedor-descargas .box-opciones {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 2rem;
+  }
+}
+
+section.contenedor-descargas .box-opciones h2 {
+  display: block;
+  font-size: 1.6em;
+  color: #ffffff;
+  border-bottom: 2px solid #ff4500;
+}
+
+table {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  background-color: #ffffff;
+}
+
+table th {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  color: #333333;
+}
+
+table td {
+  color: #000000;
+  padding: 0.5rem;
+}
+
+table td .DownIc {
+  color: #000000;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+table td .DownIc:hover {
+  color: rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+table td {
+  background-color: #ffffff;
+  color: #333333;
+  text-decoration: none;
+  padding: 0.4rem 1.4rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+table tr:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+table tr td span i::before {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  margin-right: 5px;
+  text-decoration: inherit;
+  background-image: url(../img/icon-table/Google-Drive-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+table tr td span i::before {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  margin-right: 5px;
+  text-decoration: inherit;
+  background-image: url(../img/icon-table/uTorrent-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section.contenedor-descargas .box-opciones table tr td span i.mega::before {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  margin-right: 5px;
+  text-decoration: inherit;
+  background-image: url(../img/icon-table/mega-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section.contenedor-descargas .box-opciones table tr td span i.fichier::before {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  margin-right: 5px;
+  text-decoration: inherit;
+  background-image: url(../img/icon-table/q3yheVBH_400x400.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+  table {
+    max-width: 800px;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+  }
+
+  table thead {
+    max-width: 500px;
+  }
+
+  table th {
+    max-width: 500px;
+    height: auto;
+    width: 100px;
+  }
+
+  .lista-cap {
+    padding: 0;
+    margin: 0;
+  }
+  .lista-cap a {
+    font-size: 0.8em;
+    text-align: center;
+    width: 110px;
+  }
+  .lista-cap a li {
+    padding: 0;
+    margin: 10px 5px;
+  }
+
+  table a {
+    float: left;
+  }
+}
+
+div.contenedor-comentario {
+  width: 80%;
+  margin: 2rem auto 0 auto;
+}
+
+h5.orange-text {
+  color: #ff9100;
+  font-size: 32px;
+}
+
+div.divider.orange {
+  background-color: #f09433;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 10px;
+}
+
+ul.collection {
+  background: #fff;
+  list-style: none;
+}
+
+.textarea_comentario {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  color: #fff;
+  padding: 10px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 15px 0 #db4a39;
+}
+
+.textarea_comentario:focus {
+  box-shadow: 0 0 15px 0 #f09433;
+}
+
+div.header-comentarios {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  background-color: #333333;
+}
+
+/*NAVEGADOR RELACIONADAS*/
+navegador.navegador_rel {
+  position: relative;
+  width: 100%;
+}
+
+navegador.navegador_rel ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+#cambiar_next1,
+#cambiar_back1 {
+  cursor: pointer;
+}
+
+.destc {
+  position: relative;
+  display: none;
+}
+
+navegador.navegador_rel ul li {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+navegador.navegador_rel ul li h5 {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  color: #ffffff;
+  display: none;
+  background-color: #dd1818;
+  padding-bottom: 0.5rem;
+  transition: 0.4s ease;
+}
+
+navegador.navegador_rel ul li a img {
+  width: 195px;
+  height: 300px;
+}
+
+navegador.navegador_rel ul li:hover h5 {
+  position: absolute;
+  display: block;
+}
+
+/*PARAMETROS DE DESCARGAS CAPITULOS*/
+ul.lista-cap {
+  margin-top: 1em;
+  list-style: none;
+  text-align: left;
+  display: none;
+}
+
+ul.lista-cap a {
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+ul.lista-cap a:hover {
+  background-color: #dd1818;
+}
+
+ul.lista-cap li {
+  padding: 10px;
+  margin: 5px;
+}
+
+ul.lista-cap li i {
+  color: green;
+}
+
+/*SLIDER DE RELACIONES*/
+.sugerencia {
+  position: relative;
+  z-index: 1000;
+}
+
+section.cont_sug {
+  background-color: #333333;
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+section.cont_sug h2 {
+  color: #f09433;
+  font-size: 1.6em;
+}
+section.cont_des h2 {
+  color: #f09433;
+  font-size: 1.6em;
+}
+
+div.contenedor-info-head {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding: 1rem 1rem 0 1rem;
+  justify-content: space-between;
+}
+
+.titulo-seccion {
+  margin-bottom: 3rem;
+}
+
+.titulo-seccion h2 {
+  position: absolute;
+}
+
+/*TITULO DE LA CATEGORIA*/
+div.titulo-categoria {
+  padding: 0.5em;
+  background-color: #333333;
+}
+
+div.titulo-categoria h2 {
+  color: white;
+  font-weight: lighter;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+/*PARAMETROS DE LA SECCION DE LA SERIE*/
+div.reproductor-cont {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.box-capC {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-navegador {
+  position: absolute;
+  width: 150px;
+  top: 38px;
+  right: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  height: 500px;
+  z-index: 2;
+}
+
+div.reproductor-cont .video-container iframe {
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height: 500px;
+  right: 0;
+  position: absolute;
+  box-shadow: 0 0 15px 0 #dd1818;
+}
+
+navegadorSerie.lista-cap {
+  position: relative;
+  border-top-left-radius: 15px;
+  background-color: transparent;
+}
+
+navegadorSerie.lista-cap ul:nth-child(1) {
+  background-color: #333;
+}
+
+navegadorSerie.lista-cap ul {
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+}
+
+navegadorSerie.lista-cap ul li {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 10px 5px;
+}
+navegadorSerie.lista-cap ul li ul {
+  position: relative;
+  display: none;
+  padding: 0;
+}
+
+navegadorSerie.lista-cap ul li ul li {
+  background-color: #333333;
+  transition: 0.4s ease;
+}
+
+navegadorSerie.lista-cap ul li ul li a {
+  color: #ebc654;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+navegadorSerie.lista-cap ul li ul li:hover {
+  background-color: #dd1818;
+}
+
+navegadorSerie.lista-cap ul li span i {
+  font-size: 1em;
+  color: #ebc654;
+  font-weight: 900;
+}
+
+navegadorSerie.lista-cap ul li a {
+  color: white;
+  font-size: 1.2em;
+}
+
+.mensaje-comentario {
+  font-size: 18px;
+  font-weight: bold;
+}
+span.title {
+  font-size: 18px;
+  color: #dd1818;
+  font-weight: bold;
+}
+div.header-comentarios {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  background-color: #333333;
+  align-items: center;
+  padding: 5px;
+}
+
+.modal-backdrop {
+  z-index: 0;
+}
+.modal-dialog {
+  top: 20%;
+  bottom: 50%;
+}
+.aviso-coment {
+  background-color: #333333;
+  color: white;
+  padding: 5px;
+}
+.aviso-coment a {
+  background-color: #dd1818;
+  padding: 5px 5px;
+  color: white;
+}
+.contenedor-comentario {
+  width: 100% !important;
+}
+
+.coment-basio {
+  text-align: center;
+  color: #dd1818;
+}
+
+.fixed {
+  clear: both;
+}
+
+div.wrapper {
+  background-color: red !important;
+  width: 100%;
+  color: aqua;
+}
+
+.ver-serie {
+  background-color: white;
+  padding-bottom: 0.1px;
+}
+
+.box-capitulo-serie {
+  margin-top: 20px;
+}
+
+.slick-list {
+  /*   display: none !important; */
+  display: inline-block;
+  border-radius: 100px !important;
+  box-shadow: 0 160px 190px 100px rgba(0, 0, 0, 0.3) !important;
+}
+
+.contenedor-preview {
+  background-color: white;
+}
+
+.video-serie {
+  float: left;
+}
+
+.public-serie {
+  float: right;
+  color: #ffffff;
+}
+
+.lista-preview {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.lista-prev ul a {
+  margin: 1rem;
+  clear: both;
+  display: inline-block;
+}
+
+.img-preview img {
+  width: 220px;
+  height: 113.67px;
+}
+
+.slider {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+.listado-select {
+  width: 100%;
+  height: 500px;
+  background-color: red !important;
+}

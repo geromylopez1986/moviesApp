@@ -1,0 +1,112 @@
+.contenedor-serie-online {
+  background-color: #ffffff;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+div.menu-caps {
+  width: 100%;
+}
+
+.activoLIst {
+  transition: 0.4s ease-in-out;
+  border-bottom: 2px solid white;
+}
+
+.nombre-temp a {
+  color: #333333;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nombre-temp a:hover {
+  color: #dd1818;
+}
+
+.icono-action {
+  position: relative;
+}
+
+.icono-action a {
+  color: orange;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  top: -15px;
+  right: 0;
+  font-size: 1.4rem;
+}
+
+.icono-action a:hover {
+  color: #dd1818;
+}
+
+header.desplegar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid orangered;
+}
+
+.preview {
+  width: 95px;
+  height: 50px;
+}
+
+.cap-play:hover {
+  transition: 0.4s ease-in-out;
+}
+
+.cap-play:hover {
+  background-color: #333333;
+}
+
+.cap-play a {
+  font-size: 2rem;
+  color: #dd1818 !important;
+}
+
+.cap_table {
+  background-color: transparent;
+  width: 100%;
+}
+
+.body_cap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body_cap tr td {
+  background-color: transparent;
+  text-align: left;
+  display: inline-block;
+}
+
+.body_cap tr td a {
+  color: #000000;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.body_cap tr td a:hover {
+  color: #dd1818;
+}
+
+.body_cap tr td span {
+  color: #333333 !important;
+}
+
+.body_cap tr:hover {
+  background-color: transparent;
+}
+
+.listado-select {
+  width: 100%;
+  height: 500px;
+  background-color: red !important;
+}

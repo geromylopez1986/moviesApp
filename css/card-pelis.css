@@ -1,0 +1,224 @@
+#card-box-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background: #000;
+    font-family: "montserrat";
+
+}
+
+div.box-card {
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+}
+
+div.box-destacados {
+width: 100%;
+height: 380px;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+flex-wrap: nowrap;
+overflow: hidden;
+align-items: center;
+}
+
+.middle{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.card {
+    width: 170px;
+    height: 380px;
+    margin-bottom: 1rem;
+    background-color: #dd1818!important;
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1400px) {
+    .card{
+        width: 210px;
+        height: 330px;
+    }
+
+}
+@media only screen and  (min-width: 1400px) {
+    .card{
+        width: 217px;
+        height: 340px;
+    }
+}
+
+.front,.back{
+width: 100%;
+height: 100%;
+overflow: hidden;
+backface-visibility: hidden;
+position: absolute;
+transition: transform .6s linear;
+}
+.front img{
+height: 100%;
+}
+.front{
+transform: perspective(600px) rotateY(0deg);
+}
+.back{
+background: #000000;
+transform: perspective(600px) rotateY(180deg);
+}
+
+.back p {
+    color: #ffffff;
+}
+
+.back span {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.2em;
+    border: 1px solid white;
+    background-color: #dd1818;
+    padding: 0 10px;
+}
+
+.back-content{
+color: #333333;
+text-align: center;
+width: 100%;
+}
+.back-content h2 {
+    margin: 0;
+  font-size: 1.2em;
+}
+.sm{
+margin: 20px 0;
+}
+.sm a{
+display: inline-flex;
+width: 40px;
+height: 40px;
+justify-content: center;
+align-items: center;
+color: #2c3e50;
+font-size: 18px;
+transition: 0.4s;
+border-radius: 50%;
+color: white!important;
+transition: .4s ease-in-out;
+}
+.sm a:first-child {
+    border:  1px solid white;
+    background-color: #dd1818;
+}
+.sm a:first-child:hover {
+    background-color: #fff;
+    color: #dd1818;
+}
+
+.sm a:hover:nth-last-child(4){
+background-color: #ffffff;
+color: #dd1818!important;
+}
+
+.sm a:hover{
+background-color: #dd1818;
+color: #ffffff;
+}
+.card:hover > .front{
+transform: perspective(600px) rotateY(-180deg);
+}
+.card_slider:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+transform: perspective(600px) rotateY(0deg);
+}
+.card_slider:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.card-box {
+    border: 1px solid white;
+    max-width: 240px;
+    max-height: 380px;
+    margin: auto 13px;
+    display: inline-block;
+}
+
+#ver-p1, #ver-p2, #ver-p3, #ver-p4 {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+
+    background-color: #dd1818;
+
+    transform: translate(-120%);
+    transition: all 0.5s ease-out;
+
+    width: 80%;
+    height: 33px;
+    overflow: hidden;
+}
+
+#icon-ver:hover #ver-p1{
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    color: #ffffff;
+    font-size: 15px!important;
+
+    transform: translate(0%)
+}
+#icon-traile:hover #ver-p2{
+    opacity: 1;
+    position: absolute;
+    font-size: 15px!important;
+    top: 100%;
+    left: 10%;
+    color: #ffffff;
+
+    transform: translate(0%)
+}
+#icon-compartir:hover #ver-p3{
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    color: #ffffff;
+    font-size: 15px!important;
+
+    transform: translate(0%)
+}
+#icon-descarga:hover #ver-p4{
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    color: #ffffff;
+
+    transform: translate(0%);
+}
+
+
+.titulo-pelicula {
+  background-color: #dd1818;
+  font-size: 15px!important;
+  padding: 5px 0;
+
+    color: #ffffff;
+}
+
+div.fecha p {
+  transition: 1s ease;
+  font-size: 15px!important;
+}

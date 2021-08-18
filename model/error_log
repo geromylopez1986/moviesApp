@@ -1,0 +1,74 @@
+[04-Feb-2020 05:19:49 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-Feb-2020 05:19:49 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 23
+[04-Feb-2020 05:20:21 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-Feb-2020 05:20:21 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 23
+[04-Feb-2020 20:18:37 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-Feb-2020 20:18:37 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar_link_descarga.php on line 59
+[04-Feb-2020 20:31:37 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-Feb-2020 20:31:37 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar_link_descarga.php on line 59
+[04-Feb-2020 21:25:59 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-Feb-2020 21:25:59 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 23
+[05-Feb-2020 06:37:25 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[05-Feb-2020 06:37:25 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 23
+[05-Feb-2020 07:57:29 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[05-Feb-2020 07:57:29 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar_link_descarga.php on line 59
+[05-Feb-2020 07:58:44 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[05-Feb-2020 07:58:44 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar_link_descarga.php on line 59
+[05-Feb-2020 07:59:12 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[05-Feb-2020 07:59:12 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar_link_descarga.php on line 59
+[05-Feb-2020 08:01:39 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[05-Feb-2020 08:01:39 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar_link_descarga.php on line 59
+[05-Feb-2020 08:02:25 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[05-Feb-2020 08:02:25 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar_link_descarga.php on line 59
+[05-Feb-2020 08:29:43 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[05-Feb-2020 08:29:43 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 23
+[05-Feb-2020 08:31:33 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[05-Feb-2020 08:31:33 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar_link_descarga.php on line 59
+[19-Feb-2020 06:26:24 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Feb-2020 06:26:24 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[19-Feb-2020 06:27:51 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Feb-2020 06:27:51 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[19-Feb-2020 20:23:15 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Feb-2020 20:23:15 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[19-Feb-2020 22:00:24 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Feb-2020 22:00:24 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 20:55:39 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 20:55:39 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 20:56:32 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 20:56:32 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 20:57:44 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 20:57:44 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 20:59:05 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 20:59:05 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 21:01:26 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 21:01:26 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 21:08:12 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 21:08:12 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 21:09:35 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 21:09:35 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 21:12:09 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 21:12:09 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 22:36:57 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 22:36:57 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 22:54:40 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 22:54:40 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 22:55:34 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 22:55:34 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar_verOnline.php on line 21
+[26-Feb-2020 22:57:46 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 22:57:46 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 23:15:38 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 23:15:38 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[26-Feb-2020 23:16:09 UTC] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[26-Feb-2020 23:16:09 UTC] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar_verOnline.php on line 21
+[28-Feb-2020 13:09:12 America/Mexico_City] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[28-Feb-2020 13:09:12 America/Mexico_City] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar_verOnline.php on line 21
+[28-Feb-2020 13:11:02 America/Mexico_City] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[28-Feb-2020 13:11:02 America/Mexico_City] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar_verOnline.php on line 21
+[04-Mar-2020 12:18:45 America/Mexico_City] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-Mar-2020 12:18:45 America/Mexico_City] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[04-Mar-2020 12:48:47 America/Mexico_City] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-Mar-2020 12:48:47 America/Mexico_City] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[04-Mar-2020 13:05:47 America/Mexico_City] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[04-Mar-2020 13:05:47 America/Mexico_City] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
+[02-May-2020 12:04:55 America/Mexico_City] PHP Warning:  Version warning: Imagick was compiled against Image Magick version 1650 but version 1654 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[02-May-2020 12:04:55 America/Mexico_City] PHP Deprecated:  Non-static method Conexion::ejecutar() should not be called statically in /home3/thepelic/public_html/model/model_modificar.php on line 33
